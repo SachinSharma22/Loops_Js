@@ -3,6 +3,7 @@
     <body>
         <h1> <p id="demo"></p></h1>
         <p id="data"></p>
+        <p id="newObj"></p>
         
         <script>
             // let i;
@@ -61,6 +62,33 @@
 
 
             document.getElementById('data').innerHTML = student.name +" of the age "+student.age+" studies "+ student.studies + " id is "+student.id;
+
+        </script>
+
+        <script>
+             // Second--> Use the keyword new to create and define a JavaScript Object
+
+            // var obj_name = new Object();
+
+            var student = new Object();
+            student.name = "sachin sharma",
+            student.age = 23,
+            student.studies = "BCA";
+
+            document.getElementById('newObj').innerHTML = student.name +" of the age "+student.age+" studies "+ student.studies;
+
+        </script>
+
+        <script>
+            function stud(name, age, studies){
+                this.name = name;
+                this.age = age;
+                this.studies = studies;
+            }
+
+            var student = stud("sachin sharma",23,"CS");
+            document.getElementById('newObj').innerHTML = student.name +" of the age "+student.age+" studies "+ student.studies;
+
 
         </script>
     </body>
