@@ -1,0 +1,28 @@
+<html>
+    <head><title>Loops in JavaScript</title></head>
+    <body>
+      
+        <h1>Creating JavaScript Object</h1>
+        <p id="demo">
+
+        </p>
+        <button id="clickme"> Click Me</button>
+
+        <script>
+
+            let user = {
+                name:"sachin",
+                age:23,
+            };
+            function sayHi(){
+                alert("Hello");
+            }
+
+            user.message  = sayHi;
+            document.getElementById('demo').innerHTML = "Hi " + user.name;
+            document.getElementById('clickme').onclick = user.message;
+
+        </script>
+            
+     </body>
+</html>
