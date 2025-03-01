@@ -1,8 +1,9 @@
 <html>
     <head><title>Loops in JavaScript</title></head>
     <body>
-        <p class="demo"></p>
-
+        <h1> <p id="demo"></p></h1>
+        <p id="data"></p>
+        
         <script>
             // let i;
             // for (i = 0; i < 5; i++){
@@ -23,13 +24,15 @@
             //     x++;
             // }while(x<10);
 
-            let x;
-            for(x=1; x<10;x++){
-                if(x == 5){
-                    continue;
-                }
-                console.log(x);
-            }
+            // let x;
+            // for(x=1; x<10;x++){
+            //     if(x == 5){
+            //         continue;
+            //     }
+            //     console.log(x);
+            // }
+
+
             // let x;
             // for(x=1; x<10;x++){
             //     console.log(x);
@@ -37,6 +40,28 @@
             //         break;
             //     }
             // }
+
+
+            // JavaScript Object:> JavaScript is an Object-oriented Programming Language. 
+            // A JavaScript object is like a real world entity having state and behavior.
+            // JavaScript is template based and we can create objects without the need of having a class
+
+            // There are three way to create objects in JavaScript
+            // Use object literal to create and define a JavaScript Object--> {name:value}
+
+            let str = "Creating JavaScript Objects";
+            document.getElementById('demo').innerHTML = str;
+
+            var student = {
+                name:"Sachin",
+                age:23,
+                id:93,
+                studies: "cs"
+            };
+
+
+            document.getElementById('data').innerHTML = student.name +" of the age "+student.age+" studies "+ student.studies + " id is "+student.id;
+
         </script>
     </body>
 </html>
